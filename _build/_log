@@ -1,0 +1,10 @@
+### Starting build.
+# Target: converter.ml.depends, tags: { extension:ml, file:converter.ml, ocaml, ocamldep, quiet }
+/home/abdo/.opam/default/bin/ocamldep.opt -modules converter.ml > converter.ml.depends
+# Target: md_types.ml.depends, tags: { extension:ml, file:md_types.ml, ocaml, ocamldep, quiet }
+/home/abdo/.opam/default/bin/ocamldep.opt -modules md_types.ml > md_types.ml.depends # cached
+# Target: md_types.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:md_types.cmo, file:md_types.ml, implem, ocaml, quiet }
+/home/abdo/.opam/default/bin/ocamlc.opt -c -o md_types.cmo md_types.ml # cached
+# Target: converter.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:converter.cmo, file:converter.ml, implem, ocaml, quiet }
+/home/abdo/.opam/default/bin/ocamlc.opt -c -o converter.cmo converter.ml
+# Compilation successful.
